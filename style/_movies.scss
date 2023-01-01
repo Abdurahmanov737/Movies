@@ -1,0 +1,66 @@
+#movies-main {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    #main-inside {
+        width: 50%;
+        color: white;
+        background-color: #222028;
+
+        #inside-movie {
+            display: flex;
+
+            padding-bottom: 20px;
+            #inside-left {
+
+                .left-poster {
+                    position: relative;
+
+                    overflow: hidden;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    
+
+                    .left-rating {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 36px;
+                        height: 36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        background-color: rgba(26, 25, 31, 0.6);
+                        border: 1px solid #29b474;
+                        border-radius: 50%;
+                    }
+
+
+                }
+            }
+
+
+            #inside-right {
+
+                padding: 0 15px;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5em;
+                }
+                .right-parts {
+
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
