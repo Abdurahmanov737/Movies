@@ -1,0 +1,58 @@
+.home-main{
+
+    width: 100%;
+    padding-top: 50px;
+    .container-main{
+        width: 70%;
+        margin: auto;
+        border: 1px solid red;
+    }
+
+    .main-top{
+        text-align: center;
+    }
+
+    .main-bottom{
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .bottom-sections{
+            width: 33%;
+            // border: 1px solid green;
+
+            .sections-head{
+                text-align: center;
+            }
+
+            ul{
+                li{
+                    padding-bottom: 10px;
+                    list-style-type: square;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        position: relative;
+                        font-size: 1.2em;
+                        &:after{
+                            position: absolute;
+                            content: " ";
+                            height: 1px;
+                            width: 0;
+                            background-color: white;
+                            left: 0;
+                            bottom: 0;
+                            transition: 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            &::after{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
